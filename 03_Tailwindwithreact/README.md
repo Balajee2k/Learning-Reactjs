@@ -1,4 +1,3 @@
-.................................................................................................//////////////////
 C1:
 so humlog ko agar props ke bare me sikhna hai to pahle jo component me title use karna hai to uske liye ap us component ke function me props name ka variable pass kar sakte hai like in card.jsx:
 function Card(props)
@@ -22,6 +21,7 @@ function App() {
 }
 
 C2:
+
 NOW HUMLOG ............................
 props.username ke jagah function me direct username pass krdenge to kam same hi karega and official yahi use hota hai toL:
 eg in card.jsx:
@@ -44,7 +44,6 @@ function App() {
 
   return (
     <>
-    <h1 className='bg-green-500 p-10 mb-1 '>Tailwind css test hai bsdk</h1>
     <Card username="balajee" btnText="click me "/>
     <Card username="anushka" />
     </>
