@@ -1,8 +1,3 @@
-# React + Vite
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
 .................................................................................................//////////////////
 C1:
 so humlog ko agar props ke bare me sikhna hai to pahle jo component me title use karna hai to uske liye ap us component ke function me props name ka variable pass kar sakte hai like in card.jsx:
@@ -12,14 +7,14 @@ console.log(props.username) // so yha humlog condole me dekhenge ki balajee prin
 
 then you can do console.log(props,"props") to know ki props kya hai then you can see in console that ye object hai to app kuch bhi pass kr sakte like eg: in app.jsx:
 function App() {
-  let myObj = {
+  let myObj =
+  {
     username: "hitesh",
     age: 21
   }
   let newArr = [1, 2, 3]
   return (
     <>
-    <h1 className='bg-green-500 p-10 mb-1 '>Tailwind css test hai bsdk</h1>
     <Card username="balajee" myarr={newArr}/> ya myobj bhi pass kr sakt ho
     <Card/ >
     </>
