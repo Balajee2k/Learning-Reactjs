@@ -6,8 +6,21 @@ import './App.css'
 function App() {
   let [counter,setCounter]=useState(15) //ye example hai ek usestate hook ka jo ki uska(ya har ek hook ka bhi) variable ek array me likhata hai always
 
+  //here  a interview qs can come see below ,ki agar hum 4 bar counter +1 karde to uska value kitna badhega ek click karne par ui me
   const addvalue=()=>{
     setCounter(counter+1)
+    setCounter(counter+1)
+    setCounter(counter+1)
+    setCounter(counter+1)
+    setCounter(counter+1)
+    // so iska ans hai agar aise karenge to ek hi bar value add ga kuki usestate ui me batch by batch feature update karta hai to usme ham ek hi agar 4 bar a gya to wo phirbhi ek bar hi kam karega , then agar usko ye kam sahi me 4 bar karbana hai to then do this:
+    /*
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    
+    */
   }
 
   const decvalue=()=>{
